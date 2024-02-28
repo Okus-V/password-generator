@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sytle.css">
+</head>
+
+<body>
+    <div class="cointainer">
+        <h1>password genrator</h1>
+        <div class="display-cointainer">
+            <input readonly placeholder="Password" type="text" class="display" id="display">
+
+            <button class="cpoy-button" id="copy">
+                <span data-cpy></span>
+                <img src="./imgs/copy-clipbord.png" height="23px" width="23px"
+                    alt="copy"></button>
+        </div>
+
+
+
+        <div class="input-cointainer">
+            <div class="length-cointaier">
+                
+                <p>password length</p>
+                <p datalength>0</p>
+            </div>
+            <!-----------slider----------->
+            <input type="range" min="1" max="20" value="1" class="slider" id="SRange" >
+
+            <!---------Checkboxes---------->
+            <div class="chexksboxes">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">for uppercase</label>
+            </div>
+
+
+            <div class="chexksboxes">
+                <input type="checkbox" id="Lowercase">
+                <label for="Lowercase">for Lowercase</label>
+            </div>
+
+
+            <div class="chexksboxes">
+                <input type="checkbox" id="number">
+                <label for="number">for number</label>
+            </div>
+
+            <div class="chexksboxes">
+                <input type="checkbox" id="Symbol">
+                <label for="Symbol">for symbol</label>
+            </div>
+
+
+
+            <div class="strangth">
+
+                <p>strength</p>
+                <div class="colourdiv" id="strength"></div>
+            </div>
+            <button id="genrate-button">genrate password</button>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

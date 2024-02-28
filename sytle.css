@@ -1,0 +1,99 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
+}
+
+.cointainer h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+.display-cointainer{
+    background-color: var(--dk-violet);
+    border-radius: 7px;
+    border-bottom: 3px solid var(--vb-violet);
+    position: relative;
+    margin: 1rem 0;
+    padding-top: 0.95rem;
+    padding-left: 0.90rem;
+    height: 60px;
+}
+.display{
+    width: 100%;
+    border: none;
+    font-size: 1.3rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border: none;
+    background: transparent;
+    list-style: none;
+    color: hsl(52, 100%, 62%);
+    font-weight: bold;
+    
+}
+
+#copy{
+    position: absolute;
+    background-color: transparent;
+    margin-left: -40px;
+}
+.input-cointainer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--dk-violet);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 10px;
+    color: white;}
+ 
+.length-cointaier{
+    display: flex;
+    gap: 200px;
+
+}
+
+
+
+#genrate-button{
+    background-color: var(--lt-violet2);
+    border-bottom: 3px solid yellow;
+    text-transform: uppercase;
+    color: var(--vb-yellow);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 10px;
+}
